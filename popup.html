@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>PSM Translator</title>
+    <style>
+      body { font-family: Arial, sans-serif; width: 300px; padding: 12px; }
+      button { margin-top: 8px; padding: 8px 12px; }
+      select { width: 100%; padding: 6px; }
+      .small { font-size: 12px; color:#666; margin-top:8px; }
+    </style>
+  </head>
+  <body>
+    <h3>PSM Translator</h3>
+    <label for="lang">Target language</label>
+    <select id="lang"></select>
+    <div>
+      <button id="translateBtn">Translate Page</button>
+      <button id="refreshBtn">Re-run (incremental)</button>
+    </div>
+    <div class="small">Default provider: LibreTranslate (public instance). See README.</div>
+    <script src="popup.js"></script>
+  </body>
+</html>

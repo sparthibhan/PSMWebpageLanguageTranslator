@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "PSMWebpageLanguageTranslator",
+  "version": "1.0.0",
+  "description": "Translate the full content of the active webpage into a selected language. Automatic detection and in-place translation.",
+  "permissions": [
+    "scripting",
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://sites.google.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "PSM Webpage Language Translator"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
